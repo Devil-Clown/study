@@ -13,9 +13,8 @@ public class ProducerController {
     private ProducerService producerService;
 
     @RequestMapping("/plus")
-    public String plus(@RequestParam("a") int a, @RequestParam("b") int b){
-//        return producerService.plus(a,b);
-        System.out.println(1);
-        return ProducerService.pathRoot;
+    public int plus(@RequestParam(value = "a", defaultValue = "1") int a,
+                       @RequestParam(value = "b", defaultValue = "1") int b){
+        return producerService.plus(a,b);
     }
 }
