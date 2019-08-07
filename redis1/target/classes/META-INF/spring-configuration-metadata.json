@@ -1,0 +1,46 @@
+{
+  "groups": [
+    {
+      "name": "redis.server",
+      "type": "com.hzk.redis1.config.JedisProperties",
+      "sourceType": "com.hzk.redis1.config.JedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "redis.server.host",
+      "type": "java.lang.String",
+      "sourceType": "com.hzk.redis1.config.JedisProperties"
+    },
+    {
+      "name": "redis.server.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.hzk.redis1.config.JedisProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.server.max-wait-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "com.hzk.redis1.config.JedisProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.server.password",
+      "type": "java.lang.String",
+      "sourceType": "com.hzk.redis1.config.JedisProperties"
+    },
+    {
+      "name": "redis.server.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.hzk.redis1.config.JedisProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.server.time-out",
+      "type": "java.lang.Integer",
+      "sourceType": "com.hzk.redis1.config.JedisProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}
