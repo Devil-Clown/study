@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.hzk.mydap.mapper.master.DictMapper">
+
+    <select id="queryAll" resultType="com.hzk.mydap.dict.model.DictBean">
+        select dmlb, ybh, dmsm, bz, xh, sfsy
+        from T_ITGS_CODE
+        where sfsy='1'
+        order by dmlb,xh asc
+    </select>
+
+<!--    <select id="queryDictBeanByDmlb" resultType="com.hzk.mydap.dict.model.DictBean">-->
+<!--        select dmlb,dm as ybh,dmsm,bz,xh,sfsy-->
+<!--        from T_ITGS_CODE-->
+<!--        where dmlb = #{dmlb}-->
+<!--    </select>-->
+</mapper>
